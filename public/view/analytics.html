@@ -4,37 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Аналитика</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header">
+    <header class="header">
+        <div class="header-content">
             <div class="header-logo header-items">
-                <img src="../assets/Logo.svg" alt="Logo">
+                <img src="../assets/header-logo.svg" alt="Logo">
             </div>
             <nav class="header-menu header-items">
-                <div class="header-menu-items">
-                    <span class="content text">ГЛАВНАЯ</span>
-                </div>
-                <div class="header-menu-items">
-                    <span class="content text">АНАЛИТИКА</span>
-                </div>  
+                <a href="main.html" class="header-menu-items" >
+                    <span style="color: #23B04A;">ГЛАВНАЯ</span>
+                </a>
+                <a href="analytics.html" class="header-menu-items"
+                style="
+                    color: #23B04A;
+                    border-bottom: 5px solid #23B04A;
+                    ">
+                    <span>АНАЛИТИКА</span>
+                </a>  
             </nav>
             <div class="header-user header-items">
-                <img src="../assets/User.svg" alt="User icon">
+                <img src="../assets/user-icon.svg" alt="User icon">
             </div>
         </div>
     </header>
     <div class="container">
         <div class="feed analytics">
+            <div class="card-data">
+                <div class="card-top">
+                    <div class="card-top-pic">
+                        <img src="../assets/unknown_device-icon.svg" alt="Device picture">
+                    </div>
+                    <div class="card-top-full_name">
+                        <span class="title text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</span>
+                        <div class="subtitle text">
+                            <span class="left-subtitle">S1.4.I14-9.001 </span>
+                            <span class="mid-subtitle">·</span>
+                            <span class="right-subtitle"> 00-024004</span>
+                        </div>
+                    </div>
+                    <div class="card-top-action">
+                        <div class="work">
+                            <div class="select">
+                                <select class="text" name="status" id="status" >
+                                    <option value="free">В работе</option>
+                                    <option value="busy">Свободен</option>
+                                </select>
+                                <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                            </div>
+                        </div>
+                        <div class="like">
+                            <img src="../assets/fav-icon-1.svg" alt="Favorite icon">
+                        </div>
+                        <div class="settings">
+                            <img src="../assets/settings-icon.svg" alt="Settings icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action_bar">
+                    <div class="list_item">
+                        <div class="select">
+                            <select class="text" name="status" id="status" >
+                                <option value="free">В работе</option>
+                                <option value="busy">Свободен</option>
+                            </select>
+                            <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                        </div>
+                    </div>
+                    <div class="save-btn">
+                        <button class="timer"></button>
+                        <div class="save_pdf">
+                            <button class="save_pdf-button"></button>
+                            <button class="three_points-button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-dates">
+                    <div class="date_input">
+                        <div class="date_at"></div>
+                        <div class="arrow-icon"></div>
+                        <div class="date_now"></div>
+                    </div>
+                </div>
+                <div class="card-times">
+                    <div class="chips">
+                        <span class="chips-day"></span>
+                        <span class="chips-week"></span>
+                        <span class="chips-2week"></span>
+                        <span class="chips-month"></span>
+                        <span class="chips-3month"></span>
+                        <span class="chips-half"></span>
+                    </div>
+                </div>
+                <div class="card-table">
+                    <div class="card-table-header">
+                        <div class="duration">Начало</div>
+                        <div class="type">Тип</div>
+                        <div class="jobs">Работы</div>
+                        <div class="result">Результат</div>
+                        <div class="user">Пользователь</div>
 
+                    </div>
+                    <div class="card-table-row">
+                        <div class="duration">
+                            <span class="text">09.10.2021, 15:46</span>
+                        </div>
+                        <div class="type">
+                            <span class="status">В работе</span>
+                            <span class="inner-type">Измерение</span>
+                        </div>
+                        <div class="jobs">
+                            <span class="text">
+                                <b>Образец/серия:</b> 000100057935_170000010325_0000251849
+                            </span>
+                        </div>
+                        <div class="result">
+                            <span class="text">
+
+                            </span>
+                            <img src="../assets/check-icon.svg" alt="Check icon">
+                        </div>
+                        <div class="user">
+                            <span class="text">
+                                morozovava
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script src="../js/main.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+    <script src="../js/main.js" type="text/javascript">
+    </script>
 </body>
 </html>
