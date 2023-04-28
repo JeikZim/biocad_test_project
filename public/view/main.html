@@ -11,21 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header">
+    <header class="header">
+        <div class="header-content">
             <div class="header-logo header-items">
-                <img src="../assets/Logo.svg" alt="Logo">
+                <img src="../assets/header-logo.svg" alt="Logo">
             </div>
             <nav class="header-menu header-items">
                 <div class="header-menu-items">
-                    <span class="content text">ГЛАВНАЯ</span>
+                    <span class="text">ГЛАВНАЯ</span>
                 </div>
                 <div class="header-menu-items">
-                    <span class="content text">АНАЛИТИКА</span>
+                    <span class="text">АНАЛИТИКА</span>
                 </div>  
             </nav>
             <div class="header-user header-items">
-                <img src="../assets/User.svg" alt="User icon">
+                <img src="../assets/user-icon.svg" alt="User icon">
             </div>
         </div>
     </header>
@@ -36,7 +36,102 @@
                 placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др." type="search" name="search" id="search-input">
                 <img src="../assets/qr_code_scanner-24px.svg" alt="QR-code scanner icon">
             </div>
-            <div class="fav"></div>
+            <div class="fav">
+                <div class="fav-header">
+                    <img src="../assets/fav-icon.svg" alt="Favorite logo">
+                    <span class="text">Любимые приборы</span>
+                </div>
+                <div class="fav-cart">
+                    <div class="fav-cart-header">
+                        <div class="title">
+                            <span class="text">Название</span>
+                        </div>
+                        <div class="status">
+                            <span class="text">Статус</span>
+                        </div>
+                    </div>
+                    <div class="fav-cart-row">
+                        <div class="title">
+                            <img src="../assets/pH.png" alt="">
+                            <span class="text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</span>
+                        </div>
+                        <div class="status">
+                            <div class="select">
+                                <select class="text" name="status" id="status" >
+                                    <option value="free">Свободен</option>
+                                    <option value="busy">Занят</option>
+                                </select>
+                                <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                            </div>
+                            <img src="../assets/notice.svg" alt="Notice icon">
+                        </div>
+                    </div>
+                    <div class="fav-cart-row">
+                        <div class="title">
+                            <img src="../assets/Спектр.png" alt="">
+                            <span class="text">Спектрофотометр Varian, Inc Cary 50 Bio</span>
+                        </div>
+                        <div class="status">
+                            <div class="select">
+                                <select class="text" name="status" id="status" >
+                                    <option value="free">Свободен</option>
+                                    <option value="busy">Занят</option>
+                                </select>
+                                <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                            </div>
+                            <img src="../assets/notice.svg" alt="Notice icon">
+                        </div>
+                    </div>
+                    <div class="fav-cart-row">
+                        <div class="title">
+                            <img src="../assets/Титратор.png" alt="">
+                            <span class="text">Титратор</span>
+                        </div>
+                        <div class="status">
+                            <div class="select">
+                                <select class="text" name="status" id="status" >
+                                    <option value="free">Свободен</option>
+                                    <option value="busy">Занят</option>
+                                </select>
+                                <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                            </div>
+                            <img src="../assets/no-notice.svg" alt="Notice icon">
+                        </div>
+                    </div>
+                    <div class="fav-cart-row">
+                        <div class="title">
+                            <img src="../assets/Коагулометр.png" alt="">
+                            <span class="text">Коагулометр Tcoag, KC 4 Delta</span>
+                        </div>
+                        <div class="status">
+                            <div class="select">
+                                <select class="text" name="status" id="status" >
+                                    <option value="free">Свободен</option>
+                                    <option value="busy">Занят</option>
+                                </select>
+                                <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                            </div>
+                            <img src="../assets/notice.svg" alt="Notice icon">
+                        </div>
+                    </div>
+                    <div class="fav-cart-row">
+                        <div class="title">
+                            <img src="../assets/Коагулометр.png" alt="">
+                            <span class="text">Коагулометр Tcoag, KC 4 Delta</span>
+                        </div>
+                        <div class="status">
+                            <div class="select">
+                                <select class="text" name="status" id="status" >
+                                    <option value="free">Свободен</option>
+                                    <option value="busy">Занят</option>
+                                </select>
+                                <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
+                            </div>
+                            <img src="../assets/notice.svg" alt="Notice icon">
+                        </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
