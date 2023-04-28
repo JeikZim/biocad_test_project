@@ -13,9 +13,9 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <div class="header-logo header-items">
+            <a href="main.html" class="header-logo header-items">
                 <img src="../assets/header-logo.svg" alt="Logo">
-            </div>
+            </a>
             <nav class="header-menu header-items">
                 <a href="main.html" class="header-menu-items" 
                 style="
@@ -28,9 +28,9 @@
                     <span>АНАЛИТИКА</span>
                 </a>  
             </nav>
-            <div class="header-user header-items">
+            <a href="#" class="header-user header-items">
                 <img src="../assets/user-icon.svg" alt="User icon">
-            </div>
+            </a>
         </div>
     </header>
     <div class="container">
@@ -38,7 +38,9 @@
             <div class="search">
                 <input 
                 placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др." type="search" name="search" id="search-input">
-                <img src="../assets/qr_code_scanner-24px.svg" alt="QR-code scanner icon">
+                <a href="#">
+                    <img src="../assets/qr_code_scanner-24px.svg" alt="QR-code scanner icon">
+                </a>
             </div>
             <div class="fav">
                 <div class="fav-header">
@@ -56,8 +58,8 @@
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <img src="../assets/pH.png" alt="">
-                            <span class="text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</span>
+                            <a href="#" class="img-link"><img src="../assets/pH.png" alt=""></a>
+                            <a href="#" class="text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</a>
                         </div>
                         <div class="status">
                             <div class="select">
@@ -67,13 +69,13 @@
                                 </select>
                                 <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
                             </div>
-                            <img src="../assets/notice.svg" alt="Notice icon">
+                            <img id="notice1" onclick="noticeSwitch(1)" src="../assets/notice.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <img src="../assets/Спектр.png" alt="">
-                            <span class="text">Спектрофотометр Varian, Inc Cary 50 Bio</span>
+                            <a href="#" class="img-link"><img src="../assets/Спектр.png" alt=""></a>
+                            <a href="#" class="text">Спектрофотометр Varian, Inc Cary 50 Bio</a>
                         </div>
                         <div class="status">
                             <div class="select">
@@ -83,13 +85,13 @@
                                 </select>
                                 <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
                             </div>
-                            <img src="../assets/notice.svg" alt="Notice icon">
+                            <img id="notice2" onclick="noticeSwitch(2)" src="../assets/notice.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <img src="../assets/Титратор.png" alt="">
-                            <span class="text">Титратор</span>
+                            <a href="#" class="img-link"><img src="../assets/Титратор.png" alt=""></a>
+                            <a href="#"  class="text">Титратор</a>
                         </div>
                         <div class="status">
                             <div class="select">
@@ -99,13 +101,13 @@
                                 </select>
                                 <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
                             </div>
-                            <img src="../assets/no-notice.svg" alt="Notice icon">
+                            <img id="notice3" onclick="noticeSwitch(3)" src="../assets/no-notice.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <img src="../assets/Коагулометр.png" alt="">
-                            <span class="text">Коагулометр Tcoag, KC 4 Delta</span>
+                            <a href="#" class="img-link"><img src="../assets/Коагулометр.png" alt=""></a>
+                            <a href="#" class="text">Коагулометр Tcoag, KC 4 Delta</a>
                         </div>
                         <div class="status">
                             <div class="select">
@@ -115,13 +117,13 @@
                                 </select>
                                 <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
                             </div>
-                            <img src="../assets/notice.svg" alt="Notice icon">
+                            <img id="notice4" onclick="noticeSwitch(4)" src="../assets/notice.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <img src="../assets/Коагулометр.png" alt="">
-                            <span class="text">Коагулометр Tcoag, KC 4 Delta</span>
+                            <a href="#" class="img-link"><img src="../assets/Коагулометр.png" alt=""></a>
+                            <a href="#"  class="text">Коагулометр Tcoag, KC 4 Delta</a>
                         </div>
                         <div class="status">
                             <div class="select">
@@ -131,7 +133,7 @@
                                 </select>
                                 <img src="../assets/arrow_drop_down_24px.svg" alt="Arrow drop down">
                             </div>
-                            <img src="../assets/notice.svg" alt="Notice icon">
+                            <img id="notice5" onclick="noticeSwitch(5)" src="../assets/notice.svg" alt="Notice icon">
                         </div>
                 </div>
 
@@ -140,6 +142,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
     <script src="../js/main.js" type="text/javascript">
+
     </script>
 </body>
 </html>
