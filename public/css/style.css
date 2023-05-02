@@ -582,15 +582,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .card-dates,
 .date_input,
-.date_at,
-.date_now {
+.dates {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .card-dates {
-    padding: 0 16px;
+    padding: 8px 16px;
     width: 1088px;
     height: 56px;
 }
@@ -601,8 +600,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 40px;
 }
 
-.date_at, .date_now  {
+.date_at, .date_to {
+    position: relative;
+}
+
+.date_input .date_at #date_at-calendar,
+.date_input .date_to #date_to-calendar {
+    position: absolute;
+    top: calc((40px - 16px)/2);
+    right: 8px;
+    pointer-events: none;
+}
+
+.dates  {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
+
+    padding-inline-start: 0px;
 
     padding: 10px 8px;
     gap: 8px;
@@ -611,16 +626,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 40px;
 
     border: 1px solid rgba(0, 0, 0, 0.12);
+
 }
 
-.date_at .text, .date_now .text {
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.date_at .text, .date_to .text  {
     display: flex;
     align-items: center;
-
-    width: 140px;
-    height: 20px;
+    justify-content: flex-start;
+    text-align: left;
     
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.25px;
