@@ -44,7 +44,7 @@
                         <span class="title text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</span>
                         <div class="subtitle text">
                             <span class="left-subtitle">S1.4.I14-9.001 </span>
-                            <span class="mid-subtitle">&nbsp;·&nbsp;</span>
+                            <span class="mid-subtitle">&nbsp; &bull; &nbsp;</span>
                             <span class="right-subtitle"> 00-024004</span>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="save-btn">
                         <button class="timer"><img src="../assets/icons/timer-icon.svg" alt="Timer icon"></button>
                         <div class="save_pdf">
-                            <button class="save_pdf-button">СОХРАНИТЬ PDF</button>
+                            <button class="save_pdf-button">СОХРАНИТЬ&nbsp;PDF</button>
                             <button class="three_points-button"><img src="../assets/icons/three-points.svg" alt="Three points"></button>
                         </div>
                     </div>
@@ -89,8 +89,11 @@
                         <div class="date_at">
                             <input 
                                 class="dates text" 
-                                type="datetime-local" 
-                                name="" id="" value="07.10.2021, 10:55">
+                                type="datetime-local" YYYY-MM-DDThh:mm
+                                name="" id=""> 
+                                <!-- value="2021-10-07T10:55"
+                                min=""
+                                max="2050-01-01T00:00" -->
                             <img id="date_at-calendar" src="../assets/icons/calendar-icon.svg" alt="Calendar icon">
                         </div>
                         <img class="arrow-icon" src="../assets/icons/arrow-lr-icon.svg" alt="Left to right arrow">
@@ -98,7 +101,10 @@
                             <input 
                                 class="dates text" 
                                 type="datetime-local" 
-                                name="" id="" value="07.10.2021, 10:55">
+                                name="" id=""> 
+                                <!-- value="2021-10-21T10:55"
+                                min=""
+                                max="2050-01-01T00:00" -->
                             <img id="date_to-calendar" src="../assets/icons/calendar-icon.svg" alt="Calendar icon">
                         </div>
                     </div>
@@ -111,48 +117,126 @@
                         <span class="chips">Месяц</span>
                         <span class="chips">3 месяца</span>
                         <span class="chips">Полгода</span>
-                        <span class="chips">Год</span>
+                        <!-- <span class="chips">Год</span> -->
                     </div>
                 </div>
                 <div class="card-table">
                     <table class="text">
                         <thead class="card-table-header">
-                            <th class="duration">Начало</th>
-                            <th class="type">Тип работы</th>
-                            <th class="jobs">Работы</th>
-                            <th class="result">Результат</th>
-                            <th class="check"></th>
-                            <th class="user">Пользователь</th>
+                            <tr class="card-table-header-row">
+                                <th class="duration text">Начало</th>
+                                <th class="type text">Тип работ</th>
+                                <th class="jobs text">Работы</th>
+                                <th class="result text">Результат</th>
+                                <th class="check text"></th>
+                                <th class="user text">Пользователь</th>
+                            </tr>
                         </thead>
-                        <tr class="card-table-row">
-                            <td class="duration">
-                                <span class="text">09.10.2021, 15:46</span>
-                            </td>
-                            <td class="type">
-                                <span class="status">В работе</span>
-                                <br>
-                                <span class="inner-type">Измерение</span>
-                            </td>
-                            <td class="jobs">
-                                <span class="text">
-                                    <b>Образец/серия:</b> 000100057935_170000010325_0000251849
-                                </span>
-                            </td>
-                            <td class="result">
-                                <span class="text">
-    
-                                </span>
-                            </td>
-                            <td class="check">
-                                <img src="../assets/icons/check-icon.svg" alt="Check icon">
-    
-                            </td>
-                            <td class="user">
-                                <span class="text">
-                                    morozovava
-                                </span>
-                            </td>
-                        </tr>
+                        <tbody class="card-table-body">
+                            <tr id="card-table-row-1" class="card-table-row">
+                                <td class="duration">
+                                    <span class="text">09.10.2021, 15:46</span>
+                                </td>
+                                <td class="type">
+                                    <span class="status text text-green">В работе</span>
+                                    <span class="inner-type text">Измерение</span>
+                                </td>
+                                <td class="jobs">
+                                    <span class="text primary-action">
+                                        <b>Образец/серия:</b> 000100057935_170000010325_0000251849
+                                    </span>
+                                </td>
+                                <td class="result">
+                                    <span class="text">
+        
+                                    </span>
+                                </td>
+                                <td class="check">
+                                    <img src="../assets/icons/check-icon.svg" alt="Check icon">
+                                </td>
+                                <td class="user">
+                                    <span class="text">
+                                        morozovava
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr id="card-table-row-2" class="card-table-row">
+                                <td class="duration">
+                                    <span class="text">12.10.2021, 12:17</span>
+                                </td>
+                                <td class="type">
+                                    <span class="status text text-green">В работе</span>
+                                    <span class="inner-type text">Калибровка</span>
+                                </td>
+                                <td class="jobs">
+                                    <span class="text">
+                                        <b>Номер колонки:</b> Колонка 2
+                                    </span>
+                                    <span class="text">
+                                        <b>Образец:</b> Образец 2
+                                    </span>
+                                    <span class="text">
+                                        <b>Образец:</b> образец 1
+                                    </span>
+                                    <span class="text">
+                                        <b>Метод:</b> метов тестовый
+                                    </span>
+                                    <span class="text">
+                                        <b>Номер колонки:</b> Колонка 1
+                                    </span>
+                                </td>
+                                <td class="result">
+                                    <span class="text">
+                                        Промывка с указанием вещества: Вещество
+                                        <!-- Комментарий:
+                                            Больше сорока символов замещать через JS
+                                        тест успешности -->
+                                    </span>
+                                </td>
+                                <td class="check">
+                                    <img src="../assets/icons/check-icon.svg" alt="Check icon">
+                                </td>
+                                <td class="user">
+                                    <span class="text">
+                                        morozovava
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr id="card-table-row-3" class="card-table-row">
+                                <td class="duration">
+                                    <span class="text">12.10.2021, 12:17</span>
+                                </td>
+                                <td class="type">
+                                    <span class="status text text-green">В работе</span>
+                                    <span class="inner-type text">Калибровка</span>
+                                </td>
+                                <td class="jobs">
+                                    <span class="text">
+                                        <b>Номер колонки:</b> Колонка 2
+                                        <b>Образец:</b> Образец 2
+                                        <b>Образец:</b> образец 1
+                                        <b>Метод:</b> метов тестовый
+                                        <b>Номер колонки:</b> Колонка 1
+                                    </span>
+                                </td>
+                                <td class="result">
+                                    <span class="text">
+                                        Промывка с указанием вещества: Вещество
+                                        <!-- Комментарий:
+                                            Больше сорока символов замещать через JS
+                                        тест успешности -->
+                                    </span>
+                                </td>
+                                <td class="check">
+                                    <img src="../assets/icons/check-icon.svg" alt="Check icon">
+                                </td>
+                                <td class="user">
+                                    <span class="text">
+                                        morozovava
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
