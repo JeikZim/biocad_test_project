@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аналитика</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
@@ -13,14 +13,14 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <a href="main.html" class="header-logo header-items">
-                <img src="../assets/icons/header-logo.svg" alt="Logo">
+            <a href="/" class="header-logo header-items">
+                <img src="header-logo.svg" alt="Logo">
             </a>
             <nav class="header-menu header-items">
-                <a href="main.html" class="header-menu-items text" >
+                <a href="/" class="header-menu-items text" >
                     <span >ГЛАВНАЯ</span>
                 </a>
-                <a href="analytics.html" class="header-menu-items text"
+                <a href="/analytics" class="header-menu-items text"
                 style="
                     color: #23B04A;
                     border-bottom: 2px solid #23B04A;
@@ -29,7 +29,7 @@
                 </a>  
             </nav>
             <a href="#" class="header-user header-items">
-                <img src="../assets/icons/user-icon.svg" alt="User icon">
+                <img src="user-icon.svg" alt="User icon">
             </a>
         </div>
     </header>
@@ -38,7 +38,7 @@
             <div class="card-data">
                 <div class="card-top">
                     <div class="card-top-pic">
-                        <img src="../assets/icons/unknown_device-icon.svg" alt="Device picture">
+                        <img src="unknown_device-icon.svg" alt="Device picture">
                     </div>
                     <div class="card-top-full_name">
                         <span class="title text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</span>
@@ -55,14 +55,14 @@
                                     <option value="busy">В работе</option>
                                     <option value="free">Свободен</option>
                                 </select>
-                                <img src="../assets/icons/arrow_drop_down_small.svg" alt="Arrow drop down">
+                                <img src="arrow_drop_down_small.svg" alt="Arrow drop down">
                             </div>
                         </div>
                         <div class="like">
-                            <img src="../assets/icons/fav-icon-1.svg" alt="Favorite icon">
+                            <img src="fav-icon-1.svg" alt="Favorite icon">
                         </div>
                         <div class="settings">
-                            <img src="../assets/icons/settings-icon.svg" alt="Settings icon">
+                            <img src="settings-icon.svg" alt="Settings icon">
                         </div>
                     </div>
                 </div>
@@ -73,14 +73,14 @@
                                 <option value="busy">Работа прибора</option>
                                 <option value="busy">Свободен</option>
                             </select>
-                            <img src="../assets/icons/arrow_drop_down_medium.svg" alt="Arrow drop down">
+                            <img src="arrow_drop_down_medium.svg" alt="Arrow drop down">
                         </div>
                     </div>
                     <div class="save-btn">
-                        <button class="timer"><img src="../assets/icons/timer-icon.svg" alt="Timer icon"></button>
+                        <button class="timer"><img src="timer-icon.svg" alt="Timer icon"></button>
                         <div class="save_pdf">
                             <button class="save_pdf-button">СОХРАНИТЬ&nbsp;PDF</button>
-                            <button class="three_points-button"><img src="../assets/icons/three-points.svg" alt="Three points"></button>
+                            <button class="three_points-button"><img src="three-points.svg" alt="Three points"></button>
                         </div>
                     </div>
                 </div>
@@ -94,29 +94,26 @@
                                 <!-- value="2021-10-07T10:55"
                                 min=""
                                 max="2050-01-01T00:00" -->
-                            <img id="date_at-calendar" src="../assets/icons/calendar-icon.svg" alt="Calendar icon">
+                            <img id="date_at-calendar" src="calendar-icon.svg" alt="Calendar icon">
                         </div>
-                        <img class="arrow-icon" src="../assets/icons/arrow-lr-icon.svg" alt="Left to right arrow">
+                        <img class="arrow-icon" src="arrow-lr-icon.svg" alt="Left to right arrow">
                         <div class="date_to">
                             <input 
                                 class="dates text" 
                                 type="datetime-local" 
                                 name="" id=""> 
-                                <!-- value="2021-10-21T10:55"
-                                min=""
-                                max="2050-01-01T00:00" -->
-                            <img id="date_to-calendar" src="../assets/icons/calendar-icon.svg" alt="Calendar icon">
+                            <img id="date_to-calendar" src="calendar-icon.svg" alt="Calendar icon">
                         </div>
                     </div>
                 </div>
                 <div class="card-times">
                     <div class="chips-wrapper text">
-                        <span class="chips">День</span>
-                        <span class="chips">Неделя</span>
-                        <span class="chips active">2 недели</span>
-                        <span class="chips">Месяц</span>
-                        <span class="chips">3 месяца</span>
-                        <span class="chips">Полгода</span>
+                        <span id="day" class="chips" onclick="chipsSwitch('day')">День</span>
+                        <span id="week" class="chips" onclick="chipsSwitch('week')">Неделя</span>
+                        <span id="twoWeeks" class="chips active" onclick="chipsSwitch('twoWeeks')">2 недели</span>
+                        <span id="month" class="chips" onclick="chipsSwitch('month')">Месяц</span>
+                        <span id="threeMonths" class="chips" onclick="chipsSwitch('threeMonths')">3 месяца</span>
+                        <span id="halfYear" class="chips" onclick="chipsSwitch('halfYear')">Полгода</span>
                         <!-- <span class="chips">Год</span> -->
                     </div>
                 </div>
@@ -152,7 +149,7 @@
                                     </span>
                                 </td>
                                 <td class="check">
-                                    <img src="../assets/icons/check-icon.svg" alt="Check icon">
+                                    <img src="check-icon.svg" alt="Check icon">
                                 </td>
                                 <td class="user">
                                     <span class="text">
@@ -194,7 +191,7 @@
                                     </span>
                                 </td>
                                 <td class="check">
-                                    <img src="../assets/icons/check-icon.svg" alt="Check icon">
+                                    <img src="check-icon.svg" alt="Check icon">
                                 </td>
                                 <td class="user">
                                     <span class="text">
@@ -228,7 +225,7 @@
                                     </span>
                                 </td>
                                 <td class="check">
-                                    <img src="../assets/icons/check-icon.svg" alt="Check icon">
+                                    <img src="check-icon.svg" alt="Check icon">
                                 </td>
                                 <td class="user">
                                     <span class="text">
@@ -243,7 +240,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
-    <script src="../js/main.js" type="text/javascript">
-    </script>
+    <script src="main.js" type="text/javascript"></script>
 </body>
 </html>

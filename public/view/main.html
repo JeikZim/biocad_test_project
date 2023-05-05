@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
@@ -13,23 +13,23 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <a href="main.html" class="header-logo header-items">
-                <img src="../assets/icons/header-logo.svg" alt="Logo">
+            <a href="/" class="header-logo header-items">
+                <img src="header-logo.svg" alt="Logo">
             </a>
             <nav class="header-menu header-items">
-                <a href="main.html" class="header-menu-items text" 
+                <a href="/" class="header-menu-items text" 
                 style="
                     color: #23B04A;
                     border-bottom: 2px solid #23B04A;
                     ">
                     <span style="color: #23B04A;">ГЛАВНАЯ</span>
                 </a>
-                <a href="analytics.html" class="header-menu-items text">
+                <a href="/analytics" class="header-menu-items text">
                     <span>АНАЛИТИКА</span>
                 </a>  
             </nav>
             <a href="#" class="header-user header-items">
-                <img src="../assets/icons/user-icon.svg" alt="User icon">
+                <img src="user-icon.svg" alt="User icon">
             </a>
         </div>
     </header>
@@ -39,12 +39,12 @@
                 <input 
                 placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др." type="search" name="search" id="search-input">
                 <a href="#">
-                    <img src="../assets/icons/qr_code_scanner-24px.svg" alt="QR-code scanner icon">
+                    <img src="qr_code_scanner-24px.svg" alt="QR-code scanner icon">
                 </a>
             </div>
             <div class="fav">
                 <div class="fav-header">
-                    <img src="../assets/icons/fav-icon.svg" alt="Favorite logo">
+                    <img src="fav-icon.svg" alt="Favorite logo">
                     <span class="text">Любимые приборы</span>
                 </div>
                 <div class="fav-card">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <a href="#" class="img-link"><img src="../assets/img/pH.png" alt=""></a>
+                            <a href="#" class="img-link"><img src="tool-1.png" alt=""></a>
                             <a href="#" class="text">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</a>
                         </div>
                         <div class="status">
@@ -67,14 +67,14 @@
                                     <option value="free">Свободен</option>
                                     <option value="busy">В работе</option>
                                 </select>
-                                <img src="../assets/icons/arrow_drop_down_small.svg" alt="Arrow drop down">
+                                <img src="arrow_drop_down_small.svg" alt="Arrow drop down">
                             </div>
-                            <img id="notice1" onclick="noticeSwitch(1)" src="../assets/icons/notice-icon.svg" alt="Notice icon">
+                            <img id="notice1" onclick="noticeSwitch(1)" src="notice-icon.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <a href="#" class="img-link"><img src="../assets/img/Спектр.png" alt=""></a>
+                            <a href="#" class="img-link"><img src="tool-2.png" alt=""></a>
                             <a href="#" class="text">Спектрофотометр Varian, Inc Cary 50 Bio</a>
                         </div>
                         <div class="status">
@@ -83,14 +83,14 @@
                                     <option value="free">Свободен</option>
                                     <option value="busy">В работе</option>
                                 </select>
-                                <img src="../assets/icons/arrow_drop_down_small.svg" alt="Arrow drop down">
+                                <img src="arrow_drop_down_small.svg" alt="Arrow drop down">
                             </div>
-                            <img id="notice2" onclick="noticeSwitch(2)" src="../assets/icons/notice-icon.svg" alt="Notice icon">
+                            <img id="notice2" onclick="noticeSwitch(2)" src="notice-icon.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <a href="#" class="img-link"><img src="../assets/img/Титратор.png" alt=""></a>
+                            <a href="#" class="img-link"><img src="tool-3.png" alt=""></a>
                             <a href="#"  class="text">Титратор</a>
                         </div>
                         <div class="status">
@@ -99,14 +99,14 @@
                                     <option value="free">Свободен</option>
                                     <option value="busy">В работе</option>
                                 </select>
-                                <img src="../assets/icons/arrow_drop_down_small.svg" alt="Arrow drop down">
+                                <img src="arrow_drop_down_small.svg" alt="Arrow drop down">
                             </div>
-                            <img id="notice3" onclick="noticeSwitch(3)" src="../assets/icons/no-notice-icon.svg" alt="Notice icon">
+                            <img id="notice3" onclick="noticeSwitch(3)" src="no-notice-icon.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <a href="#" class="img-link"><img src="../assets/img/Коагулометр.png" alt=""></a>
+                            <a href="#" class="img-link"><img src="tool-4.png" alt=""></a>
                             <a href="#" class="text">Коагулометр Tcoag, KC 4 Delta</a>
                         </div>
                         <div class="status">
@@ -115,14 +115,14 @@
                                     <option value="free">Свободен</option>
                                     <option value="busy">В работе</option>
                                 </select>
-                                <img src="../assets/icons/arrow_drop_down_small.svg" alt="Arrow drop down">
+                                <img src="arrow_drop_down_small.svg" alt="Arrow drop down">
                             </div>
-                            <img id="notice4" onclick="noticeSwitch(4)" src="../assets/icons/block-notice-icon.svg" alt="Notice icon">
+                            <img id="notice4" onclick="noticeSwitch(4)" src="block-notice-icon.svg" alt="Notice icon">
                         </div>
                     </div>
                     <div class="fav-card-row">
                         <div class="title">
-                            <a href="#" class="img-link"><img src="../assets/img/Коагулометр.png" alt=""></a>
+                            <a href="#" class="img-link"><img src="tool-5.png" alt=""></a>
                             <a href="#"  class="text">Коагулометр Tcoag, KC 4 Delta</a>
                         </div>
                         <div class="status">
@@ -131,9 +131,9 @@
                                     <option value="free">Свободен</option>
                                     <option value="busy">В работе</option>
                                 </select>
-                                <img src="../assets/icons/arrow_drop_down_small.svg" alt="Arrow drop down">
+                                <img src="arrow_drop_down_small.svg" alt="Arrow drop down">
                             </div>
-                            <img id="notice5" onclick="noticeSwitch(5)" src="../assets/icons/block-notice-icon.svg" alt="Notice icon">
+                            <img id="notice5" onclick="noticeSwitch(5)" src="block-notice-icon.svg" alt="Notice icon">
                         </div>
                 </div>
 
@@ -141,7 +141,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
-    <script src="../js/main.js" type="text/javascript">
+    <script src="main.js" type="text/javascript">
 
     </script>
 </body>
