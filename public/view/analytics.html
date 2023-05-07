@@ -336,13 +336,28 @@
                                 `)
                             }
                         }
-                        iRow.append(`
-                            <td class="result">
-                                <span class="text">
-                                    ${el.result}
-                                </span>
-                            </td> 
-                        `)
+
+                        if (el.result.length > 40) {
+                            let tmp = el.result.slice(0, 41) + '<br>...'
+                            iRow.append(`
+                                <td class="result">
+                                    <span class="text" title="${el.result}">
+                                        ${tmp}
+                                    </span>
+                                </td> 
+                            `)
+                            
+                        } 
+                        else {
+                            iRow.append(`
+                                <td class="result">
+                                    <span class="text">
+                                        ${el.result}
+                                    </span>
+                                </td> 
+                            `)
+                        }
+                        
                         if (el.check) {
                             iRow.append(`
                                 <td class="check">
@@ -358,9 +373,9 @@
                         }
                         iRow.append(`
                             <td class="user">
-                                <span class="text">
+                                <a target="_blank" href=" ${el.user.link}" class="text">
                                     ${el.user.name}
-                                </span>
+                                </a>
                             </td>
                         `)
                         
@@ -372,7 +387,6 @@
                 return;
             }
         }
-
 
         function setCookie(name, value, options = {}) {
             options = {
