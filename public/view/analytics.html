@@ -241,6 +241,22 @@
     <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
     <script src="/js/main.js" type="text/javascript"></script>
     <script>
+        if (!window.location.href.includes('?id=')) {
+            console.log(window.location.href)
+            window.location.href = window.location.href + '?id=' + (getCookie('analytics-id') || 1)
+        } 
+        else {
+            let url = window.location.href;
+            let i = url.search(/id=*[^\&]+/g);
+            let id = url.slice(i + 3)
+
+            renderCard(id);
+            
+            setCookie('analytics-id', id);
+
+            console.log(getCookie('analytics-id'))
+        }
+        
         async function renderCard(id) {
             const res = await fetch('/api/analytics?id=' + id);
             if (res.ok) { 
@@ -357,12 +373,36 @@
             }
         }
 
-        let url = window.location.href;
-        let i = url.search(/id=*[^\&]+/g);
-        let id = url.slice(i + 3)
 
-        renderCard(id);
-        
+        function setCookie(name, value, options = {}) {
+            options = {
+            path: '/',
+            ...options
+            };
+
+            if (options.expires instanceof Date) {
+                options.expires = options.expires.toUTCString();
+            }
+
+            let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+            for (let optionKey in options) {
+                updatedCookie += "; " + optionKey;
+                let optionValue = options[optionKey];
+                if (optionValue !== true) {
+                    updatedCookie += "=" + optionValue;
+                }
+            }
+
+            document.cookie = updatedCookie;
+        }
+
+        function getCookie(name) {
+            let matches = document.cookie.match(new RegExp(
+                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+            ));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
     </script>
 </body>
 </html>
