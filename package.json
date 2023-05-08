@@ -2,11 +2,11 @@
   "name": "test_project",
   "version": "1.0.0",
   "description": "test project for BioCad ",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "serve": "nodemon app.js"
+    "start": "node index.js",
+    "serve": "nodemon index.js"
   },
   "author": "Ruslan Bagautdinov",
   "license": "ISC",
