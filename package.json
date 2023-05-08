@@ -2,12 +2,11 @@
   "name": "test_project",
   "version": "1.0.0",
   "description": "test project for BioCad ",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "serve": "nodemon index.js"
+    "start": "node app.js",
+    "serve": "nodemon app.js"
   },
   "author": "Ruslan Bagautdinov",
   "license": "ISC",

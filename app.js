@@ -2,8 +2,8 @@ import express from 'express';
 import path from "path"
 import serverRoutes from './routers/servers.js';
 
-const HOST = process.env.HOST ?? 'localhost';
-const PORT = process.env.PORT ?? 3000;
+const HOST = process.env.APP_IP || 'localhost';
+const PORT = process.env.APP_PORT || 3000;
 const __dirname = path.resolve();
 const app = express();
 
